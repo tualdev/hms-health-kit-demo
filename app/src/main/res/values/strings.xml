@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HealthKitSuperDemo</string>
+    <string name="data_controller">Data Controller</string>
+    <string name="sensors_controller">Sensors Controller</string>
+
+    <string name="weight">Update Weight</string>
+    <string name="enter_weight">weight</string>
+    <string name="update">Update</string>
+    <string name="weight_str">Weight</string>
+    <string name="enter_height">height</string>
+    <string name="insert">Insert</string>
+    <string name="enter_step">step</string>
+    <string name="read">Read</string>
+    <string name="delete">Delete</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="receiver">Receiver</string>
+    <string name="sync">Sync Data</string>
+    <string name="clear_cloud">Clear Cloud</string>
+</resources>

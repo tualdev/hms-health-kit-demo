@@ -1,0 +1,30 @@
+{
+	"agcgw":{
+		"backurl":"connect-dre.dbankcloud.cn",
+		"url":"connect-dre.hispace.hicloud.com"
+	},
+	"client":{
+		"cp_id":"5190090000025494656",
+		"product_id":"736430079244564408",
+		"client_id":"406439379662275648",
+		"client_secret":"DC33B0235DE15EF963E13217B0A90722E32AAB984F4CD960280A0A746A471236",
+		"app_id":"102561199",
+		"package_name":"com.huawei.healthkitsuperdemo",
+		"api_key":"CgB6e3x9Eq5PGzDNutLQBrw7rzz8Ia7+b98LPbiGlE6q9U1rKID9KRrv5R/ba0cvd5nOy5dRh05Yg6mCcXgUs4sb"
+	},
+	"service":{
+		"analytics":{
+			"collector_url":"datacollector-dre.dt.hicloud.com,datacollector-dre.dt.dbankcloud.cn",
+			"resource_id":"p1",
+			"channel_id":""
+		},
+		"cloudstorage":{
+			"storage_url":"https://agc-storage-dre.platform.dbankcloud.cn"
+		},
+		"ml":{
+			"mlservice_url":"ml-api-dre.ai.dbankcloud.com,ml-api-dre.ai.dbankcloud.cn"
+		}
+	},
+	"region":"DE",
+	"configuration_version":"1.0"
+}
