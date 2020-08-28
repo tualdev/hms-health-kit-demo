@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            app:title="@string/sensors_controller"
+            app:titleTextColor="@color/white"
+            app:theme="@style/ToolbarTheme"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/getSensorController"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/get_sensor_controller"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/update_button_bg"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/registerSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/register_steps"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/update_button_bg"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/unregisterSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/unregister_steps"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/update_button_bg"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/scanHeartRateDevices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/scan_heart_rate_devices"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/update_button_bg"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/stopScanning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/stop_scanning"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/update_button_bg"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/saveHeartRateDevice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/save_heart_rate_device"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/update_button_bg"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/listMatchedDevices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/list_matched_devices"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/update_button_bg"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/findDataCollectors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/find_data_collectors"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/update_button_bg"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/removeHeartRateDevice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/remove_heart_rate_device"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/update_button_bg"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/registerHeartRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/register_heart_rate"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/update_button_bg"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/unregisterHeartRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/unregister_heart_rate"
+                    android:textColor="@android:color/white"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/update_button_bg"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

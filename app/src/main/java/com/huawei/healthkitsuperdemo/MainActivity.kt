@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var loginWithHuaweiId : HuaweiIdAuthButton
     private lateinit var dataControllerTv : TextView
     private lateinit var sensorsControllerTv : TextView
+    private lateinit var autoRecorderControllerTv : TextView
+    private lateinit var activityRecordsControllerTv : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +53,8 @@ class MainActivity : AppCompatActivity() {
         loginWithHuaweiId = findViewById(R.id.loginWithHuaweiId)
         dataControllerTv = findViewById(R.id.dataControllerTv)
         sensorsControllerTv = findViewById(R.id.sensorsControllerTv)
+        autoRecorderControllerTv = findViewById(R.id.autoRecorderControllerTv)
+        activityRecordsControllerTv = findViewById(R.id.activityRecordsControllerTv)
 
         initView()
     }
@@ -66,10 +70,17 @@ class MainActivity : AppCompatActivity() {
         })
 
         sensorsControllerTv.setOnClickListener(View.OnClickListener {
-
+            SensorControllerActivity.launch(this)
         })
-    }
 
+        autoRecorderControllerTv.setOnClickListener(View.OnClickListener {
+            AutoRecorderControllerActivity.launch(this)
+        })
+
+        activityRecordsControllerTv.setOnClickListener {
+            ActivityRecordsControllerActivity.launch(this)
+        }
+    }
 
     private fun signIn() {
 
