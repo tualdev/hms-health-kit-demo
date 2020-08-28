@@ -1,4 +1,4 @@
-HUAWEI AppGallery Connect Auth Service Demo
+HUAWEI Health Kit Demo
 =====
 
 HUAWEI Health Kit (Health Kit for short) allows ecosystem apps to access fitness and health data of users based on their HUAWEI ID and authorization.
